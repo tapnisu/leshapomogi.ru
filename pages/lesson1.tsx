@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 
+import createNewProject from "@public/lesson1/create-new-project.png";
 import langSelect from "@public/lesson1/lang-select.png";
-import createNewProject from "@public/lesson1/create-new-project.png"
 
 const Lesson1: NextPage = () => {
 	return (
@@ -104,28 +104,28 @@ int main() {
 						Project... (Проект...)
 					</p>
 					<p>
-						<Image
-							src={createNewProject}
-							alt="Скриншот создание проекта"
-						/>
+						<Image src={createNewProject} alt="Скриншот создание проекта" />
 					</p>
 					<p>
 						Выбираем тип проекта Console Application (Консольное приложение).
 					</p>
 					<p>
-						<img
-							src="lesson1/select-console-application.png"
+						<Image
+							src="/lesson1/select-console-application.png"
 							alt="Скриншот выбор типа проекта"
 						/>
 					</p>
 					<p>И сохраняем проект куда-нибудь.</p>
 					<p>
-						<img src="lesson1/save-project.png" alt="Скриншот сохраняем файл" />
+						<Image
+							src="/lesson1/save-project.png"
+							alt="Скриншот сохраняем файл"
+						/>
 					</p>
 					<p>Теперь у нас есть текстовый редактор для C++.</p>
 					<p>
-						<img
-							src="lesson1/ready-editor.png"
+						<Image
+							src="/lesson1/ready-editor.png"
 							alt="Скриншот готовый редактор"
 						/>
 					</p>
@@ -134,7 +134,7 @@ int main() {
 						сохранить), и F10 для запуска.
 					</p>
 					<p>
-						<img src="lesson1/1000-7.png" alt="Скриншот 1000-7" />
+						<Image src="/lesson1/1000-7.png" alt="Скриншот 1000-7" />
 					</p>
 					<p>Теперь можно делать 1000-7 в C++ ура.</p>
 					<h3 id="ссылки">Ссылки</h3>
