@@ -25,7 +25,7 @@ const Lesson1: NextPage = () => {
 					</a>
 				</div>
 
-				<div className="w-full md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
+				<div className="w-full min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
 					<div className="prose dark:prose-invert">
 						<h1 id="урок-1">Урок 1</h1>
 						<p>
