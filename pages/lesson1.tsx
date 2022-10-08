@@ -5,6 +5,9 @@ import Image from "next/image";
 import createNewProject from "@public/lesson1/create-new-project.png";
 import langSelect from "@public/lesson1/lang-select.png";
 
+import deadInsideCpp from "@public/lesson1/1000-7.png";
+
+
 const Lesson1: NextPage = () => {
 	return (
 		<div className="bg-white text-black dark:bg-black dark:text-white">
@@ -134,7 +137,7 @@ int main() {
 						сохранить), и F10 для запуска.
 					</p>
 					<p>
-						<Image src="/lesson1/1000-7.png" alt="Скриншот 1000-7" />
+						<Image src={deadInsideCpp} alt="Скриншот 1000-7" />
 					</p>
 					<p>Теперь можно делать 1000-7 в C++ ура.</p>
 					<h3 id="ссылки">Ссылки</h3>
