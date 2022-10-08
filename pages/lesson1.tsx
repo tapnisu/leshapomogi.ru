@@ -4,7 +4,9 @@ import Image from "next/image";
 
 import createNewProject from "@public/lesson1/create-new-project.png";
 import langSelect from "@public/lesson1/lang-select.png";
-
+import selectConsoleApplication from "@public/lesson1/select-console-application.png";
+import saveProject from "@public/lesson1/save-project.png";
+import readyEditor from "@public/lesson1/ready-editor.png";
 import deadInsideCpp from "@public/lesson1/1000-7.png";
 
 
@@ -114,21 +116,21 @@ int main() {
 					</p>
 					<p>
 						<Image
-							src="/lesson1/select-console-application.png"
+							src={selectConsoleApplication}"
 							alt="Скриншот выбор типа проекта"
 						/>
 					</p>
 					<p>И сохраняем проект куда-нибудь.</p>
 					<p>
 						<Image
-							src="/lesson1/save-project.png"
+							src={saveProject}
 							alt="Скриншот сохраняем файл"
 						/>
 					</p>
 					<p>Теперь у нас есть текстовый редактор для C++.</p>
 					<p>
 						<Image
-							src="/lesson1/ready-editor.png"
+							src={readyEditor}
 							alt="Скриншот готовый редактор"
 						/>
 					</p>
