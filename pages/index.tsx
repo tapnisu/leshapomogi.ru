@@ -10,7 +10,9 @@ const Index: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="w-full min-h-screen flex flex-column flex-wrap content-center justify-center items-center">
+			<main className="w-full min-h-screen flex flex-col flex-wrap content-center justify-center items-center">
+				<h1 className="text-2xl">Лёшапомоги</h1>
+
 				<ol>
 					<li>
 						<a href="/lesson1" className="underline">
