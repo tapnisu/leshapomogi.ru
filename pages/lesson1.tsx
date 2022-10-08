@@ -116,7 +116,7 @@ int main() {
 					</p>
 					<p>
 						<Image
-							src={selectConsoleApplication}"
+							src={selectConsoleApplication}
 							alt="Скриншот выбор типа проекта"
 						/>
 					</p>
