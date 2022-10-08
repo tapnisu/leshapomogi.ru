@@ -13,10 +13,15 @@ const Index: NextPage = () => {
 			<main className="w-full min-h-screen flex flex-col flex-wrap content-center justify-center items-center">
 				<h1 className="text-2xl">Лёшапомоги</h1>
 
-				<ol>
+				<ol className="list-decimal">
 					<li>
 						<a href="/lesson1" className="underline">
 							Урок 1
+						</a>
+					</li>
+					<li>
+						<a href="/task1" className="underline">
+							Задание 1
 						</a>
 					</li>
 				</ol>
