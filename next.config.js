@@ -5,7 +5,7 @@ const nextConfig = {
   async redirects() {
 		return [
                         {
-				source: "/сливответовогэ",
+				source: "/otvetioge",
 				destination: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
 				permanent: true,
 			},
