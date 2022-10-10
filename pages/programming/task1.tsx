@@ -1,13 +1,5 @@
 import type {NextPage} from "next";
 import Head from "next/head";
-import Image from "next/image";
-
-import deadInsideCpp from "@public/lesson1/1000-7.png";
-import createNewProject from "@public/lesson1/create-new-project.png";
-import langSelect from "@public/lesson1/lang-select.png";
-import readyEditor from "@public/lesson1/ready-editor.png";
-import saveProject from "@public/lesson1/save-project.png";
-import selectConsoleApplication from "@public/lesson1/select-console-application.png";
 
 const Lesson1: NextPage = () => {
   return (
