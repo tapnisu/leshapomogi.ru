@@ -1,8 +1,8 @@
-import {AnimatePresence, domAnimation, LazyMotion, m} from "framer-motion";
-import type {AppProps} from "next/app";
+import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
+import type { AppProps } from "next/app";
 import "../styles/globals.css";
 
-function MyApp({Component, pageProps, router}: AppProps) {
+function MyApp({ Component, pageProps, router }: AppProps) {
   return (
     <div className="app-wrap dark:bg-black">
       <LazyMotion features={domAnimation}>

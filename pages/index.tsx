@@ -6,13 +6,12 @@ const Index: NextPage = () => {
     <div className="bg-white dark:bg-black dark:text-white">
       <Head>
         <title>Лёшапомоги</title>
-        <meta name="description" content="ЛЁША ПОМОГИ!"/>
-        <link rel="icon" href="/favicon.ico"/>
+        <meta name="description" content="ЛЁША ПОМОГИ!" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="min-h-screen flex flex-col justify-between">
-        <div
-          className="w-full h-48 flex flex-col flex-wrap content-center justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-900 dark:to-blue-900">
+        <div className="w-full h-48 flex flex-col flex-wrap content-center justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500 dark:from-cyan-900 dark:to-blue-900">
           <h1 className="text-3xl">Лёшапомоги</h1>
         </div>
 

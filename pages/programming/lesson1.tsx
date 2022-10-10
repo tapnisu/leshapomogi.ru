@@ -14,8 +14,8 @@ const Lesson1: NextPage = () => {
     <div>
       <Head>
         <title>Урок 1 - Лёшапомоги</title>
-        <meta name="description" content="ЛЁША ПОМОГИ!"/>
-        <link rel="icon" href="/public/favicon.ico"/>
+        <meta name="description" content="ЛЁША ПОМОГИ!" />
+        <link rel="icon" href="/public/favicon.ico" />
       </Head>
 
       <main className="bg-white dark:text-white dark:bg-neutral-900 md:bg-neutral-100 md:dark:bg-black">
@@ -25,18 +25,17 @@ const Lesson1: NextPage = () => {
           </a>
         </div>
 
-        <div
-          className="min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
+        <div className="min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
           <div className="md:p-8 md:rounded-3xl md:bg-white md:dark:bg-neutral-900">
             <div className="prose dark:prose-invert">
               <h1 id="урок-1">Урок 1</h1>
               <p>
                 2 этапа создания программы:
-                <br/>
+                <br />
                 Трансляция - перевод текста программы в машинный код
-                <br/>
+                <br />
                 Компоновка - сборка частей программы и подключение стандартных
-                функций <br/> Трансляторами называют компиляторы - они
+                функций <br /> Трансляторами называют компиляторы - они
                 переводят код в машинный код.
               </p>
               <pre>

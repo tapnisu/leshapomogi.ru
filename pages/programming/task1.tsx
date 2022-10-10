@@ -1,4 +1,4 @@
-import type {NextPage} from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 
 const Lesson1: NextPage = () => {
@@ -6,8 +6,8 @@ const Lesson1: NextPage = () => {
     <div>
       <Head>
         <title>Задание 2 - Лёшапомоги</title>
-        <meta name="description" content="ЛЁША ПОМОГИ!"/>
-        <link rel="icon" href="/public/favicon.ico"/>
+        <meta name="description" content="ЛЁША ПОМОГИ!" />
+        <link rel="icon" href="/public/favicon.ico" />
       </Head>
 
       <main className="bg-white dark:text-white dark:bg-neutral-900 md:bg-neutral-100 md:dark:bg-black">
@@ -17,8 +17,7 @@ const Lesson1: NextPage = () => {
           </a>
         </div>
 
-        <div
-          className="min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
+        <div className="min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
           <div className="md:p-8 md:rounded-3xl md:bg-white md:dark:bg-neutral-900">
             <div className="prose dark:prose-invert">
               <h1 id="урок-1">Задание 2</h1>
@@ -26,21 +25,21 @@ const Lesson1: NextPage = () => {
               <h3>"В": Вывести на экран текст "лесенкой"</h3>
               <pre>
                 Вася
-                <br/>
+                <br />
                 {"    "}пошёл
-                <br/>
+                <br />
                 {"         "}гулять
               </pre>
 
               <h3>"C": Вывести на экран рисунок из букв</h3>
               <pre>
-                {"   "}Ж<br/>
+                {"   "}Ж<br />
                 {"  "}ЖЖЖ
-                <br/> ЖЖЖЖЖ
-                <br/>
+                <br /> ЖЖЖЖЖ
+                <br />
                 ЖЖЖЖЖЖЖ
-                <br/> HH HH
-                <br/> ZZZZZ
+                <br /> HH HH
+                <br /> ZZZZZ
               </pre>
 
               <h2>Решение</h2>
