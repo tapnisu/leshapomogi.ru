@@ -14,8 +14,8 @@ const Lesson1: NextPage = () => {
 		<div className="bg-white text-black dark:bg-black dark:text-white">
 			<Head>
 				<title>Урок 1 - Лёшапомоги</title>
-				<meta name="description" content="ЛЁША ПОМОГИ!" />
-				<link rel="icon" href="/favicon.ico" />
+				<meta name="description" content="ЛЁША ПОМОГИ!"/>
+				<link rel="icon" href="/public/favicon.ico"/>
 			</Head>
 
 			<main>
