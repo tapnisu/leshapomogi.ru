@@ -11,14 +11,14 @@ import selectConsoleApplication from "@public/lesson1/select-console-application
 
 const Lesson1: NextPage = () => {
   return (
-    <div className="bg-white text-black dark:bg-black dark:text-white">
+    <div>
       <Head>
         <title>Урок 1 - Лёшапомоги</title>
         <meta name="description" content="ЛЁША ПОМОГИ!"/>
         <link rel="icon" href="/public/favicon.ico"/>
       </Head>
 
-      <main className="bg-white dark:bg-black md:bg-neutral-50 md:dark:bg-neutral-900">
+      <main className="bg-white dark:text-white dark:bg-neutral-900 md:bg-neutral-100 md:dark:bg-black">
         <div className="p-4 md:fixed">
           <a href="/" className="text-xl">
             🠔 Назад
@@ -27,7 +27,7 @@ const Lesson1: NextPage = () => {
 
         <div
           className="min-h-screen md:flex md:flex-column md:flex-wrap md:content-center md:justify-center md:items-center p-4">
-          <div className="md:p-8 md:rounded-3xl md:bg-white md:dark:bg-black">
+          <div className="md:p-8 md:rounded-3xl md:bg-white md:dark:bg-neutral-900">
             <div className="prose dark:prose-invert">
               <h1 id="урок-1">Урок 1</h1>
               <p>
