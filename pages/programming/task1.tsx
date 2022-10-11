@@ -78,7 +78,7 @@ int main(int argc, char** argv) {
 								</code>
 							</pre>
 
-							<h3 id="ссылки">Ссылки</h3>
+							<h2 id="ссылки">Ссылки</h2>
 							<ul>
 								<li>
 									<a href="https://lyceum.nstu.ru/sdo/mod/assign/view.php?id=14543">
