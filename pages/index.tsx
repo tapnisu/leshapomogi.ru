@@ -26,11 +26,6 @@ const Index: NextPage = () => {
 									</a>
 								</li>
 								<li>
-									<a href="/programming/task1" className="underline">
-										Задание 1
-									</a>
-								</li>
-								<li>
 									<a href="/programming/lesson2" className="underline">
 										Урок 2
 									</a>
