@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { BiArrowBack } from "react-icons/bi";
 
 const Lesson1: NextPage = () => {
 	return (
@@ -13,7 +14,7 @@ const Lesson1: NextPage = () => {
 			<main className="bg-white dark:text-white dark:bg-neutral-900 md:bg-neutral-100 md:dark:bg-black">
 				<div className="p-4 md:fixed">
 					<a href="/" className="text-xl">
-						🠔 Назад
+						<BiArrowBack />
 					</a>
 				</div>
 

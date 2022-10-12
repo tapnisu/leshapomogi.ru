@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import { BiArrowBack } from "react-icons/bi";
 
 import deadInsideCpp from "@public/lesson1/1000-7.png";
 import createNewProject from "@public/lesson1/create-new-project.png";
@@ -21,7 +22,7 @@ const Lesson1: NextPage = () => {
 			<main className="bg-white dark:text-white dark:bg-neutral-900 md:bg-neutral-100 md:dark:bg-black">
 				<div className="p-4 md:fixed">
 					<a href="/" className="text-xl">
-						🠔 Назад
+						<BiArrowBack />
 					</a>
 				</div>
 
