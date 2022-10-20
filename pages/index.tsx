@@ -20,14 +20,14 @@ const Index: NextPage = () => {
 						<li>
 							<h1 className="text-xl">Программирование</h1>
 							<ol className="list-decimal">
-								<li>
+								{/*<li>
 									<a
 										href="/programming/devcpp-installation"
 										className="underline"
 									>
 										Установка DevC++
 									</a>
-								</li>
+								</li>*/}
 								<li>
 									<a href="/programming/lesson1" className="underline">
 										Урок 1
