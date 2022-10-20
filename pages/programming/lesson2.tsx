@@ -130,7 +130,7 @@ const Lesson1: NextPage = () => {
 							</h6>
 							<h2>Типы данных</h2>
 							<ol>
-								<li> int // целое </li>
+								<li>int // целое </li>
 								<li>long int // длинное целое </li>
 								<li>float // вещественное</li>
 								<li>double // веществ. двойной точности</li>
@@ -162,7 +162,7 @@ const Lesson1: NextPage = () => {
 							<pre>
 								<code className="language-cpp">
 									{
-										"int a, b;\n...\n a ++;\n // a = a + 1;\n a --;\n // a = a – 1;\na += b;\n// a = a + b;\n a -= b;\n // a = a - b;\na *= b;\n// a = a * b;\na /= b;\n// a = a / b;\n a %= b;\n// a = a % b;"
+										"int a, b;\n...\na ++; // a = a + 1;\na --; // a = a – 1;\na += b; // a = a + b;\na -= b; // a = a - b;\na *= b; // a = a * b;\na /= b; // a = a / b;\na %= b; // a = a % b;"
 									}
 								</code>
 							</pre>
