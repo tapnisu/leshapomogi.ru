@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<footer className="w-full bg-gradient-to-b from-transparent to-blue-400 dark:to-neutral-900 flex flex-col items-center p-8">
+		<footer className="w-full bg-gradient-to-b from-transparent to-red-100 dark:to-neutral-900 flex flex-col items-center p-8">
 			<div className="mx-auto w-24 h-1 my-12 bg-black dark:bg-white rounded-full"></div>
 			<h2 className="text-xl">Написать Лёшепомоги</h2>
 			<ul className="list-disc p-4">

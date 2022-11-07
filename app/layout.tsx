@@ -15,7 +15,7 @@ export default function RootLayout({
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</head>
 
-			<body className="bg-neutral-300 text-black dark:bg-black dark:text-white">
+			<body className="bg-neutral-100 text-black dark:bg-black dark:text-white">
 				<Navbar />
 				{children}
 				<Footer />
