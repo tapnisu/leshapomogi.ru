@@ -1,4 +1,4 @@
-export default function HomePage() {
+export default function Lesson() {
 	return (
 		<div>
 			<header>

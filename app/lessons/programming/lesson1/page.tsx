@@ -7,7 +7,7 @@ import readyEditor from "@public/lesson1/ready-editor.png";
 import saveProject from "@public/lesson1/save-project.png";
 import selectConsoleApplication from "@public/lesson1/select-console-application.png";
 
-export default function HomePage() {
+export default function Lesson() {
 	return (
 		<div>
 			<header>
