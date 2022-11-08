@@ -25,6 +25,11 @@ export default function HomePage() {
 										Урок 2
 									</a>
 								</li>
+								<li>
+									<a href="/lessons/programming/lesson3" className="underline">
+										Урок 3
+									</a>
+								</li>
 							</ol>
 						</li>
 					</ul>
