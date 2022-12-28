@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomePage() {
 	return (
 		<div className="min-h-screen flex flex-col content-center justify-between">
@@ -16,21 +18,25 @@ export default function HomePage() {
 							<h1 className="text-xl">Программирование</h1>
 							<ol className="list-decimal">
 								<li>
-									<a href="/lessons/programming/lesson1" className="underline">
+									<Link href="/lessons/programming/lesson1" className="underline">
 										Урок 1
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="/lessons/programming/lesson2" className="underline">
+									<Link href="/lessons/programming/lesson2" className="underline">
 										Урок 2
-									</a>
+									</Link>
 								</li>
 								<li>
-									<a href="/lessons/programming/lesson3" className="underline">
+									<Link href="/lessons/programming/lesson3" className="underline">
 										Урок 3
-									</a>
+									</Link>
 								</li>
 							</ol>
+						</li>
+						<li>
+							<h1 className="text-xl">Лёшепомогите</h1>
+							<Link href="https://www.donationalerts.com/r/tapnisu">Donationalerts</Link>
 						</li>
 					</ul>
 				</div>
