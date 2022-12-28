@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Lesson() {
 	return (
 		<div>
@@ -198,9 +200,9 @@ int main()
 				<h2 id="ссылки">Ссылки</h2>
 				<ul>
 					<li>
-						<a href="https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14674">
+						<Link href="https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14674">
 							C++ 2 урок презентация
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

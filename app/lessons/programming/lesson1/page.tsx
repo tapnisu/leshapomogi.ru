@@ -6,6 +6,7 @@ import langSelect from "@public/lesson1/lang-select.png";
 import readyEditor from "@public/lesson1/ready-editor.png";
 import saveProject from "@public/lesson1/save-project.png";
 import selectConsoleApplication from "@public/lesson1/select-console-application.png";
+import Link from "next/link";
 
 export default function Lesson() {
 	return (
@@ -159,14 +160,14 @@ int main() {
 				<h2 id="ссылки">Ссылки</h2>
 				<ul>
 					<li>
-						<a href="https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14542">
+						<Link href="https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14542">
 							C++ 1 урок презентация
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="https://lyceum.nstu.ru/sdo/mod/url/view.php?id=1790">
+						<Link href="https://lyceum.nstu.ru/sdo/mod/url/view.php?id=1790">
 							DevC++
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
