@@ -18,7 +18,16 @@ const Footer = () => {
 					<Link href="https://twitter.com/tapnisu">Twitter</Link>
 				</li>
 				<li>
-					<Link href="https://t.me/tapnisu">Telegram</Link>
+					<Link href="https://t.me/tapnisu">Telegram 1</Link>
+				</li>
+				<li>
+					<Link href="https://t.me/alexiyrybin">Telegram 2</Link>
+				</li>
+				<li>
+					<Link href="https://vk.com/tapnisu">VK 1</Link>
+				</li>
+				<li>
+					<Link href="https://vk.com/rybinaalina">VK 2</Link>
 				</li>
 				<li>
 					<Link href="mailto:alexiy.rybin@gmail.com">Почта</Link>
