@@ -9,11 +9,13 @@ interface Data extends PageData {
 }
 
 export default (data: Data) => {
-	const posts = data.search.pages("type=post");
+	const posts = data.search.pages("type=programming");
 
 	return (
 		<>
 			<h1>{data.title}</h1>
+
+			<h2>Программирование</h2>
 
 			<ul>
 				{posts.map((post) => (

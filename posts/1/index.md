@@ -1,7 +1,7 @@
 ---
 layout: layouts/main.tsx
 title: Урок 1
-type: post
+type: programming
 ---
 
 # Урок 1
