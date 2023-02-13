@@ -1,13 +1,15 @@
-name: Deploy
+name: Publish on GitHub Pages
+
 on: [push]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  deploy:
-    name: Deploy
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
 
     steps:
       - name: Clone repository
@@ -21,9 +23,14 @@ jobs:
       - name: Build site
         run: deno task build
 
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          project: leshapomogi
-          entrypoint: https://deno.land/std@0.167.0/http/file_server.ts
-          root: ./_site
+          path: "_site"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
