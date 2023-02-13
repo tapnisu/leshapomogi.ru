@@ -7,7 +7,7 @@ export default ({ title, children }: PageData) => (
 			<link rel="stylesheet" href="/styles/globals.css" />
 		</head>
 		<body>
-			<div className="bg-black text-white min-h-screen">{children}</div>
+			<div>{children}</div>
 		</body>
 	</html>
 );
