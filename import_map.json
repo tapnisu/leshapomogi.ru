@@ -1,9 +1,9 @@
 {
-	"imports": {
-		"lume/": "https://deno.land/x/lume@v1.15.1/",
-		"postcss_font_format_keywords": "https://deno.land/x/postcss_font_format_keywords@4.0.1/mod.js?source",
-		"postcss_autoprefixer": "https://deno.land/x/postcss_autoprefixer@0.2.8/mod.js?source",
-		"postcss_nesting": "https://raw.githubusercontent.com/lumeland/postcss-nesting/master/mod.js",
-		"cssnano": "npm:cssnano@5.1.14"
-	}
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.15.1/",
+    "postcss_font_format_keywords": "https://deno.land/x/postcss_font_format_keywords@4.0.1/mod.js?source",
+    "postcss_autoprefixer": "https://deno.land/x/postcss_autoprefixer@0.2.8/mod.js?source",
+    "postcss_nesting": "https://raw.githubusercontent.com/lumeland/postcss-nesting/master/mod.js",
+    "cssnano": "npm:cssnano@5.1.14"
+  }
 }

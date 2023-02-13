@@ -18,26 +18,26 @@ import postcssNesting from "postcss_nesting";
 const site = lume();
 
 site
-	.use(terser())
-	.use(svgo())
-	.use(
-		postcss({
-			plugins: [
-				postcssFontFormatKeywords(),
-				postcssAutoprefixer(),
-				postcssNesting(),
-			],
-		})
-	)
-	.use(sass({ includes: ["styles"] }))
-	.use(source_maps())
-	.use(relative_urls())
-	.use(prism())
-	.use(jsx_preact())
-	.use(esbuild())
-	.use(code_highlight())
-	.use(imagick())
-	.copy("favicon.ico")
-	.hooks.addPostcssPlugin(nano);
+  .use(terser())
+  .use(svgo())
+  .use(
+    postcss({
+      plugins: [
+        postcssFontFormatKeywords(),
+        postcssAutoprefixer(),
+        postcssNesting(),
+      ],
+    }),
+  )
+  .use(sass({ includes: ["styles"] }))
+  .use(source_maps())
+  .use(relative_urls())
+  .use(prism())
+  .use(jsx_preact())
+  .use(esbuild())
+  .use(code_highlight())
+  .use(imagick())
+  .copy("favicon.ico")
+  .hooks.addPostcssPlugin(nano);
 
 export default site;
