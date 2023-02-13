@@ -11,8 +11,6 @@ interface Data extends PageData {
 export default (data: Data) => {
 	const posts = data.search.pages("type=post");
 
-	console.log(posts);
-
 	return (
 		<>
 			<h1>{data.title}</h1>
