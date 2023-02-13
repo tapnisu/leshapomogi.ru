@@ -571,6 +571,7 @@
     "https://deno.land/x/lume@v1.15.1/deps/preact.ts": "46ee4ceb475c33e053b05ce80d5e65580428cfc57c6288309b75ec11848b9ef7",
     "https://deno.land/x/lume@v1.15.1/deps/prism.ts": "a3165cc967096b97f672db582e3b957f0e4e10485511198e43856eccb92bdc8e",
     "https://deno.land/x/lume@v1.15.1/deps/react.ts": "6ce99e14ad6bd9ce09f69c90b5a5597e44be78eab7f334bcab31f4824b12536a",
+    "https://deno.land/x/lume@v1.15.1/deps/sass.ts": "b405bca1b10707e3905705c915c2f3e5ca123de7866a82655a99020b2db9ce77",
     "https://deno.land/x/lume@v1.15.1/deps/svgo.ts": "1165571f8c0279c5071d8b8981839a1833a57b15461287707682286f812ed7de",
     "https://deno.land/x/lume@v1.15.1/deps/tailwindcss.ts": "70591b5dbcae3e81cbdb0874fbabb160e735eafc9bfb18b7a965aa06d123f2f3",
     "https://deno.land/x/lume@v1.15.1/deps/terser.ts": "a8e5c9767f9f92b16e79f5c9d609cfea244c204dbba589ece299a2762041473d",
@@ -597,6 +598,7 @@
     "https://deno.land/x/lume@v1.15.1/plugins/postcss.ts": "5dc3a6e76293db27a7b98e4f63f1a38fb7c7ca6038628adee79c1b6698795215",
     "https://deno.land/x/lume@v1.15.1/plugins/prism.ts": "f2afaa579cb13aac0520ecd782242e0c735e11faccee6dab85f505b8322caeb4",
     "https://deno.land/x/lume@v1.15.1/plugins/relative_urls.ts": "5cf2f4d9b83616231bfb068db8d3b252a62a9d0f42a92cc37ce9aad8aef30089",
+    "https://deno.land/x/lume@v1.15.1/plugins/sass.ts": "fd21d0c646e3d804a1fc599e6f0dca37dcaa0363f236ea4b129261238013a63f",
     "https://deno.land/x/lume@v1.15.1/plugins/search.ts": "63b29bf31dfdb4cb9146b5e82c5d86190507842f5da0b85be9ed310c15752076",
     "https://deno.land/x/lume@v1.15.1/plugins/slugify_urls.ts": "321ab12f08f82711135699dc85f6d530a73c105dd87ae50a9b70505df556b767",
     "https://deno.land/x/lume@v1.15.1/plugins/source_maps.ts": "3d3d97691937019949fa791dbd61002c42d918d07cc7cc37028c5018b9aa1bc4",
@@ -891,6 +893,7 @@
   },
   "npm": {
     "specifiers": {
+      "@lumeland/sass@1.57.1": "@lumeland/sass@1.57.1",
       "@lumeland/tailwindcss@3.2.5": "@lumeland/tailwindcss@3.2.5_postcss@8.4.21",
       "@tailwindcss/typography": "@tailwindcss/typography@0.5.9_postcss@8.4.21",
       "autoprefixer@10.4.13": "autoprefixer@10.4.13_postcss@8.4.21",
@@ -968,6 +971,13 @@
         "dependencies": {
           "@lumeland/acorn-node": "@lumeland/acorn-node@1.8.3",
           "defined": "defined@1.0.1"
+        }
+      },
+      "@lumeland/sass@1.57.1": {
+        "integrity": "sha512-YvJ/PILiotwa59IMEBxLtrLW6pEEotByvJIX9uyWu3yK04C+PevsOzROcFYwgjAsjDD2YzDgtiTJE7HfKDmFmQ==",
+        "dependencies": {
+          "immutable": "immutable@4.2.4",
+          "source-map-js": "source-map-js@1.0.2"
         }
       },
       "@lumeland/tailwindcss@3.2.5_postcss@8.4.21": {
@@ -1413,6 +1423,10 @@
       },
       "highlight.js@11.7.0": {
         "integrity": "sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==",
+        "dependencies": {}
+      },
+      "immutable@4.2.4": {
+        "integrity": "sha512-WDxL3Hheb1JkRN3sQkyujNlL/xRjAo3rJtaU5xeufUauG66JdMr32bLj4gF+vWl84DIA3Zxw7tiAjneYzRRw+w==",
         "dependencies": {}
       },
       "is-binary-path@2.1.0": {

@@ -5,7 +5,7 @@ export default (page: PageData) => {
 		<html>
 			<head>
 				<title>{page.title}</title>
-				<link rel="stylesheet" href="/css/post.css" />
+				<link rel="stylesheet" href="/styles/post.css" />
 			</head>
 			<body>
 				<div>{page.children}</div>
