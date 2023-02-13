@@ -36,7 +36,7 @@ site
 	.use(esbuild())
 	.use(code_highlight())
 	.use(imagick())
-	.copy("style")
+	.copy("styles/")
 	.copy("favicon.ico");
 
 export default site;

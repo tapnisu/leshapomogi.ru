@@ -1,6 +1,6 @@
 import type { PageData } from "lume/core.ts";
 
-export const title = "Главная";
+export const title = "лёшапомоги.рф - главная";
 export const layout = "layouts/main.tsx";
 
 interface Data extends PageData {
@@ -8,9 +8,22 @@ interface Data extends PageData {
 	layout: typeof layout;
 }
 
-export default (data: Data) => (
-	<>
-		<h1>{data.title}</h1>
-		<p>Лёшапомоги.рф</p>
-	</>
-);
+export default (data: Data) => {
+	const posts = data.search.pages("type=post");
+
+	console.log(posts);
+
+	return (
+		<>
+			<h1>{data.title}</h1>
+
+			<ul>
+				{posts.map((post) => (
+					<li>
+						<a href={post.data.url}>{post.data.title}</a>
+					</li>
+				))}
+			</ul>
+		</>
+	);
+};
