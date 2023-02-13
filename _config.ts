@@ -20,6 +20,7 @@ site
 	.use(svgo())
 	.use(
 		postcss({
+			includes: "styles",
 			plugins: [
 				postcssFontFormatKeywords(),
 				postcssAutoprefixer(),
@@ -35,6 +36,7 @@ site
 	.use(esbuild())
 	.use(code_highlight())
 	.use(imagick())
+	.copy("style")
 	.copy("favicon.ico");
 
 export default site;
