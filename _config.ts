@@ -1,3 +1,4 @@
+import nano from "cssnano";
 import lume from "lume/mod.ts";
 import code_highlight from "lume/plugins/code_highlight.ts";
 import esbuild from "lume/plugins/esbuild.ts";
@@ -20,13 +21,11 @@ site
 	.use(svgo())
 	.use(
 		postcss({
-			includes: "styles",
 			plugins: [
 				postcssFontFormatKeywords(),
 				postcssAutoprefixer(),
 				postcssNesting(),
 			],
-			keepDefaultPlugins: true,
 		})
 	)
 	.use(source_maps())
@@ -36,7 +35,7 @@ site
 	.use(esbuild())
 	.use(code_highlight())
 	.use(imagick())
-	.copy("styles/")
-	.copy("favicon.ico");
+	.copy("favicon.ico")
+	.hooks.addPostcssPlugin(nano);
 
 export default site;
