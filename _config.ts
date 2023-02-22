@@ -13,7 +13,6 @@ import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
 import postcssAutoprefixer from "postcss_autoprefixer";
 import postcssFontFormatKeywords from "postcss_font_format_keywords";
-import postcssNesting from "postcss_nesting";
 
 const site = lume();
 
@@ -25,7 +24,6 @@ site
       plugins: [
         postcssFontFormatKeywords(),
         postcssAutoprefixer(),
-        postcssNesting(),
       ],
     }),
   )
