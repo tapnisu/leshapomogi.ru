@@ -1,11 +1,13 @@
 import type { PageData } from "lume/core.ts";
 
 export const title = "лёшапомоги.рф - главная";
+export const description = "лёшапомоги.рф - главная";
 export const layout = "layouts/main.tsx";
 
 interface Data extends PageData {
-  title: typeof title;
-  layout: typeof layout;
+  title: string;
+  description: string;
+  layout: string;
 }
 
 export default (data: Data) => {
