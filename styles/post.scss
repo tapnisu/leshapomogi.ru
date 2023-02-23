@@ -1,7 +1,6 @@
 @import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github-dark.min.css";
-
-$main-bg-color: #ffffff;
-$second-bg-color: #f0f0f0;
+@import "colors.scss";
+@import "mixins.scss";
 
 * {
 	margin: 0;
@@ -44,4 +43,22 @@ img {
 li,
 ol {
 	list-style-position: inside;
+}
+
+a {
+	@include transition-colors;
+
+	color: $link-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+
+	&:visited {
+		color: $link-visited-color;
+
+		&:hover {
+			color: $link-hover-visited-color;
+		}
+	}
 }
