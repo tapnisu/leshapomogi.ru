@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.tsx
+layout: layouts/post.tsx
 title: Урок 1 - введение
 description: Установка и введение в язык C++
 type: programming

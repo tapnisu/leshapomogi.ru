@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.tsx
+layout: layouts/post.tsx
 title: Урок 4 - ветвления (if)
 description: Ветвления (if) и как их использовать
 type: programming
