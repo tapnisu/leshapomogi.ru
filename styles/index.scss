@@ -1,0 +1,28 @@
+@import "colors.scss";
+@import "mixins.scss";
+@import "globals.scss";
+
+.bg-card {
+	@include bg-gradient;
+
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	.card {
+		background-color: $transparent-bg;
+		backdrop-filter: blur(12px);
+
+		border-radius: 2em;
+
+		max-width: 768px;
+
+		.card-content {
+			padding: 2em;
+		}
+	}
+}
