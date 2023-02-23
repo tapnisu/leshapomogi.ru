@@ -1,5 +1,7 @@
 @import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github-dark.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+$main-bg-color: #ffffff;
+$second-bg-color: #f0f0f0;
 
 * {
 	margin: 0;
@@ -19,7 +21,7 @@ img {
 }
 
 .bg-card {
-	background-color: #cccccc;
+	background-color: $second-bg-color;
 	min-height: 100vh;
 
 	display: flex;
@@ -29,7 +31,7 @@ img {
 	justify-content: center;
 
 	.card {
-		background-color: #fff;
+		background-color: $main-bg-color;
 
 		max-width: 768px;
 
