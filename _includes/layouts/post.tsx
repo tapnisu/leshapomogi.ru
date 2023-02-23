@@ -14,8 +14,8 @@ export default (page: PageData) => {
 			<body>
 				<div class="bg-card">
 					<div class="card">
-						<div className="card-content">
-							<a href="/" class="back-to-main-link">Главная</a>
+						<div class="card-content">
+							<a href="/">Главная</a>
 							{page.children}
 						</div>
 					</div>
