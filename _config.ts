@@ -35,7 +35,7 @@ site
   .use(esbuild())
   .use(code_highlight())
   .use(imagick())
-  .copy("favicon.ico")
+  .copy("assets/favicon.ico", "favicon.ico")
   .copy("assets/")
   .hooks.addPostcssPlugin(nano);
 

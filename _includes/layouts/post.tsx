@@ -15,6 +15,7 @@ export default (page: PageData) => {
 					rel="stylesheet"
 					href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/github-dark.min.css"
 				/>
+				<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 			</head>
 			<body>
 				<div class="bg-card">

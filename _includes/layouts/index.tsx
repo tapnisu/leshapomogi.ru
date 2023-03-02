@@ -10,6 +10,7 @@ export default (page: PageData) => {
         <title>{page.title}</title>
         <meta name="description" content={page.description}></meta>
         <link rel="stylesheet" href="/styles/index.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <body>
         <div class="bg-card">
