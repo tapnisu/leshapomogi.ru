@@ -16,6 +16,7 @@ html {
 img {
 	max-width: 100%;
 	max-height: 100%;
+	padding: 1em;
 }
 
 li,
@@ -44,5 +45,17 @@ a {
 @media (prefers-color-scheme: dark) {
 	a {
 		color: $link-color-dark;
+
+		&:hover {
+			color: $link-hover-color-dark;
+		}
+
+		&:visited {
+			color: $link-visited-color-dark;
+
+			&:hover {
+				color: $link-hover-color-dark;
+			}
+		}
 	}
 }
