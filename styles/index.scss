@@ -14,8 +14,8 @@
 	justify-content: center;
 
 	.card {
-		background-color: $transparent-bg;
-		backdrop-filter: blur(12px);
+		color: $text-color;
+		background-color: $main-bg-color;
 
 		border-radius: 2em;
 
@@ -23,6 +23,17 @@
 
 		.card-content {
 			padding: 2em;
+		}
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.bg-card {
+		@include bg-gradient-dark;
+
+		.card {
+			color: $text-color-dark;
+			background-color: $main-bg-color-dark;
 		}
 	}
 }

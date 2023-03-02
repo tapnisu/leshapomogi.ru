@@ -10,3 +10,7 @@
 @mixin bg-gradient {
 	background: $bg-gradient;
 }
+
+@mixin bg-gradient-dark {
+	background: $bg-gradient-dark;
+}

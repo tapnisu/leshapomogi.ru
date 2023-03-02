@@ -1,4 +1,8 @@
+$text-color: #000;
+$text-color-dark: #fff;
+
 $main-bg-color: #fff;
+$main-bg-color-dark: #000;
 $second-bg-color: #eee;
 
 $link-color: rgb(96, 96, 255);
@@ -6,5 +10,5 @@ $link-hover-color: #aaf;
 $link-visited-color: #6933ff;
 $link-hover-visited-color: #a382ff;
 
-$transparent-bg: #ffffff77;
 $bg-gradient: linear-gradient(to right, #44f, #fcc);
+$bg-gradient-dark: linear-gradient(to right, #44f, #fcc);
