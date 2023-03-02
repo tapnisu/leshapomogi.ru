@@ -4,7 +4,7 @@
 @import "globals.scss";
 
 .bg-card {
-	@include bg-gradient;
+	background-color: $second-bg-color;
 
 	min-height: 100vh;
 
@@ -28,7 +28,7 @@
 
 @media (prefers-color-scheme: dark) {
 	.bg-card {
-		@include bg-gradient-dark;
+		background-color: $second-bg-color-dark;
 
 		.card {
 			color: $text-color-dark;
