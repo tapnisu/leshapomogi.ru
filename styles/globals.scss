@@ -36,7 +36,13 @@ a {
 		color: $link-visited-color;
 
 		&:hover {
-			color: $link-hover-visited-color;
+			color: $link-hover-color;
 		}
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	a {
+		color: $link-color-dark;
 	}
 }

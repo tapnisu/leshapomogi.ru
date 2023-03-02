@@ -25,6 +25,22 @@
 	}
 }
 
+.home-link {
+	color: $text-color;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+
+	&:visited {
+		color: $text-color;
+
+		&:hover {
+			color: $link-hover-color;
+		}
+	}
+}
+
 @media (prefers-color-scheme: dark) {
 	.bg-card {
 		background-color: $second-bg-color-dark;
@@ -32,6 +48,22 @@
 		.card {
 			color: $text-color-dark;
 			background-color: $main-bg-color-dark;
+		}
+	}
+
+	.home-link {
+		color: $text-color-dark;
+	
+		&:hover {
+			color: $link-hover-color;
+		}
+	
+		&:visited {
+			color: $text-color-dark;
+	
+			&:hover {
+				color: $link-hover-color;
+			}
 		}
 	}
 }

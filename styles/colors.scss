@@ -7,7 +7,9 @@ $main-bg-color-dark: #1a1523;
 $second-bg-color: #beb1d8;
 $second-bg-color-dark: #0b090f;
 
-$link-color: rgb(96, 96, 255);
-$link-hover-color: #aaf;
-$link-visited-color: #6933ff;
-$link-hover-visited-color: #a382ff;
+$link-color: $text-color;
+$link-color-dark: $text-color-dark;
+
+$link-hover-color: #9a92e2;
+
+$link-visited-color: #b29bdd;

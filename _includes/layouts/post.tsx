@@ -19,7 +19,7 @@ export default (page: PageData) => {
 				<div class="bg-card">
 					<div class="card">
 						<div class="card-content">
-							<a href="/">Главная</a>
+							<a href="/" className="home-link">Главная</a>
 							{page.children}
 						</div>
 					</div>
