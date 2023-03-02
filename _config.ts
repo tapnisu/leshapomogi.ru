@@ -36,6 +36,7 @@ site
   .use(code_highlight())
   .use(imagick())
   .copy("favicon.ico")
+  .copy("assets/")
   .hooks.addPostcssPlugin(nano);
 
 export default site;
