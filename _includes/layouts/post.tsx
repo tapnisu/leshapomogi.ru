@@ -10,6 +10,10 @@ export default (page: PageData) => {
 				<title>{page.title}</title>
 				<meta name="description" content={page.description}></meta>
 				<link rel="stylesheet" href="/styles/post.css" />
+				<link
+					rel="stylesheet"
+					href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/github-dark.min.css"
+				/>
 			</head>
 			<body>
 				<div class="bg-card">
