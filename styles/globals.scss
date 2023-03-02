@@ -13,10 +13,12 @@ html {
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-img {
+.language-cpp, img {
 	max-width: 100%;
 	max-height: 100%;
-	padding: 1em;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 li,
