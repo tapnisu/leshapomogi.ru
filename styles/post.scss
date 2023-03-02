@@ -55,14 +55,14 @@
 		color: $text-color-dark;
 	
 		&:hover {
-			color: $link-hover-color;
+			color: $link-hover-color-dark;
 		}
 	
 		&:visited {
 			color: $text-color-dark;
 	
 			&:hover {
-				color: $link-hover-color;
+				color: $link-hover-color-dark;
 			}
 		}
 	}
