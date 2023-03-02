@@ -1,6 +1,7 @@
 @import "colors.scss";
 @import "mixins.scss";
 @import "globals.scss";
+@import "navbar.scss";
 
 .bg-card {
 	background-color: $second-bg-color;
@@ -53,14 +54,14 @@
 
 	.home-link {
 		color: $text-color-dark;
-	
+
 		&:hover {
 			color: $link-hover-color-dark;
 		}
-	
+
 		&:visited {
 			color: $text-color-dark;
-	
+
 			&:hover {
 				color: $link-hover-color-dark;
 			}

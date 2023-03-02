@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@components/": "./components/",
     "cssnano": "npm:cssnano@5.1.15",
     "lume/": "https://deno.land/x/lume@v1.15.2/",
     "postcss_autoprefixer": "https://deno.land/x/postcss_autoprefixer@0.2.8/mod.js?source",

@@ -1,3 +1,4 @@
+import Navbar from "@components/Navbar.tsx";
 import type { PageData } from "lume/core.ts";
 
 export default (page: PageData) => {
@@ -18,10 +19,8 @@ export default (page: PageData) => {
 			<body>
 				<div class="bg-card">
 					<div class="card">
-						<div class="card-content">
-							<a href="/" className="home-link">Главная</a>
-							{page.children}
-						</div>
+						<Navbar />
+						<div class="card-content">{page.children}</div>
 					</div>
 				</div>
 			</body>
