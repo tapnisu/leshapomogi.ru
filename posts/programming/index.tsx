@@ -1,10 +1,10 @@
 import type { PageData } from "lume/core.ts";
 
-export const title = "лёшапомоги.рф - главная";
-export const description = "лёшапомоги.рф - главная";
+export const title = "лёшапомоги.рф - программирование";
+export const description = "лёшапомоги.рф - программирование";
 export const layout = "layouts/base.tsx";
 
-export default function indexPage(data: PageData) {
+export default function postsProgrammingPage(data: PageData) {
   const postsProgramming = data.search
     .pages("type=programming")
     .sort((a, b) => {

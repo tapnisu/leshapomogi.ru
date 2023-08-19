@@ -4,7 +4,7 @@ export const title = "лёшапомоги.рф - главная";
 export const description = "лёшапомоги.рф - главная";
 export const layout = "layouts/base.tsx";
 
-export default function indexPage(data: PageData) {
+export default function postsPage(data: PageData) {
   const postsProgramming = data.search
     .pages("type=programming")
     .sort((a, b) => {
