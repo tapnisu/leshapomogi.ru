@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.tsx
+layout: layouts/base.tsx
 title: Урок 2 - переменные и работа с математикой
 description: Как использовать переменные, приоритеты арифметических операций, дополнительные функции математики
 type: programming

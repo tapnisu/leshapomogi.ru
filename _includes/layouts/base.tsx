@@ -1,6 +1,6 @@
 import type { PageData } from "lume/core.ts";
 
-export default (page: PageData) => {
+export default function baseLayout(page: PageData) {
   return (
     <html lang="ru">
       <head>
@@ -9,16 +9,19 @@ export default (page: PageData) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{page.title}</title>
         <meta name="description" content={page.description}></meta>
-        <link rel="stylesheet" href="/styles/index.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/nord.min.css"
+        />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
-      <body>
-        <div class="bg-card">
-          <div class="card">
-            <div className="card-content">{page.children}</div>
-          </div>
-        </div>
+      <body class="container">
+        <article>{page.children}</article>
       </body>
     </html>
   );
-};
+}

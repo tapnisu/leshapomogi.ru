@@ -7,7 +7,6 @@ import jsx_preact from "lume/plugins/jsx_preact.ts";
 import postcss from "lume/plugins/postcss.ts";
 import prism from "lume/plugins/prism.ts";
 import relative_urls from "lume/plugins/relative_urls.ts";
-import sass from "lume/plugins/sass.ts";
 import source_maps from "lume/plugins/source_maps.ts";
 import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
@@ -21,13 +20,9 @@ site
   .use(svgo())
   .use(
     postcss({
-      plugins: [
-        postcssFontFormatKeywords(),
-        postcssAutoprefixer(),
-      ],
-    }),
+      plugins: [postcssFontFormatKeywords(), postcssAutoprefixer()],
+    })
   )
-  .use(sass({ includes: ["styles"] }))
   .use(source_maps())
   .use(relative_urls())
   .use(prism())
@@ -37,6 +32,7 @@ site
   .use(imagick())
   .copy("assets/favicon.ico", "favicon.ico")
   .copy("assets/")
+  .copy("css/")
   .hooks.addPostcssPlugin(nano);
 
 export default site;

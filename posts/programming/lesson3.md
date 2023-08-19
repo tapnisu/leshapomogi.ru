@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.tsx
+layout: layouts/base.tsx
 title: Урок 3 - случайные числа
 description: Случайные числа и с чем их едят
 type: programming

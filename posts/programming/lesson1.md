@@ -1,5 +1,5 @@
 ---
-layout: layouts/post.tsx
+layout: layouts/base.tsx
 title: Урок 1 - введение
 description: Установка и введение в язык C++
 type: programming
@@ -24,7 +24,7 @@ int main() {
   cout << "2+";
   cout << "2=?\n";
   cout << "Ответ: 4";
-  
+
   cin.get();
 
   return 0;
