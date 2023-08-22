@@ -6,12 +6,15 @@ interface Path {
 }
 
 export default function baseLayout(page: PageData) {
-  const path = page.page.src.path.split("/").filter((e) => e != "");
+  const path = page.page.src.path
+    .split("/")
+    .filter((e) => e != "")
+    .reverse();
   const paths: Path[] = [];
 
   const pathTemp = page.page.src.path.split("/");
 
-  path.reverse().forEach((p) => {
+  path.forEach((p) => {
     if (p == "index") return;
 
     const href = pathTemp.join("/");
