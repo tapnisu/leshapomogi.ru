@@ -62,6 +62,19 @@ export default function baseLayout(page: PageData) {
         </nav>
 
         <article>{page.children}</article>
+
+        <article>
+          <p>Написать Лёше</p>
+
+          <ul>
+            <li>
+              <a href="https://t.me/tapnisu">Telegram</a>
+            </li>
+            <li>
+              <a href="mailto:0xalekseirybin@gmail.com">Почта</a>
+            </li>
+          </ul>
+        </article>
       </body>
     </html>
   );
