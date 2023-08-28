@@ -1,10 +1,10 @@
 import type { PageData } from "lume/core.ts";
 
-export const title = "лёшапомоги.рф";
-export const description = "Всякие записи от Лёши";
+export const title = "Записки / лёшапомоги.рф";
+export const description = "Пользуйтесь. Или нет";
 export const layout = "layouts/base.tsx";
 
-export default function indexPage(data: PageData) {
+export default function postsPage(data: PageData) {
   const postsProgramming = data.search.pages("type=cpp").sort((a, b) => {
     const titleA = a.data.title.toUpperCase();
     const titleB = b.data.title.toUpperCase();
@@ -23,8 +23,6 @@ export default function indexPage(data: PageData) {
   return (
     <>
       <h1>{data.title}</h1>
-
-      <h2>Программирование</h2>
 
       <h3>C++</h3>
 
