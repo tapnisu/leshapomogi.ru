@@ -21,7 +21,7 @@ site
   .use(
     postcss({
       plugins: [postcssFontFormatKeywords(), postcssAutoprefixer()],
-    })
+    }),
   )
   .use(source_maps())
   .use(relative_urls())
