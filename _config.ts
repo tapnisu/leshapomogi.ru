@@ -7,6 +7,7 @@ import jsx_preact from "lume/plugins/jsx_preact.ts";
 import postcss from "lume/plugins/postcss.ts";
 import prism from "lume/plugins/prism.ts";
 import relative_urls from "lume/plugins/relative_urls.ts";
+import sitemap from "lume/plugins/sitemap.ts";
 import source_maps from "lume/plugins/source_maps.ts";
 import svgo from "lume/plugins/svgo.ts";
 import terser from "lume/plugins/terser.ts";
@@ -21,8 +22,9 @@ site
   .use(
     postcss({
       plugins: [postcssFontFormatKeywords(), postcssAutoprefixer()],
-    }),
+    })
   )
+  .use(sitemap({ sort: "date=desc" }))
   .use(source_maps())
   .use(relative_urls())
   .use(prism())
