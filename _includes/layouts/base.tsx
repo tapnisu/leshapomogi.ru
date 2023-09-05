@@ -54,7 +54,7 @@ export default function baseLayout(page: PageData) {
         />
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/nord.min.css"
+          href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/github-dark.min.css"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </head>
