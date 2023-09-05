@@ -1,9 +1,15 @@
 {
-  "importMap": "./import_map.json",
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
+  },
+  "imports": {
+    "@components/": "./components/",
+    "cssnano": "npm:cssnano@6.0.1",
+    "lume/": "https://deno.land/x/lume@v1.18.5/",
+    "postcss_autoprefixer": "https://deno.land/x/postcss_autoprefixer@0.2.8/mod.js",
+    "postcss_font_format_keywords": "https://deno.land/x/postcss_font_format_keywords@4.0.1/mod.js"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
