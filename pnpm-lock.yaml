@@ -25,9 +25,6 @@ devDependencies:
   nuxt:
     specifier: ^3.7.4
     version: 3.7.4
-  tailwind-merge:
-    specifier: ^1.14.0
-    version: 1.14.0
 
 packages:
 
@@ -7720,10 +7717,6 @@ packages:
       tailwindcss: 3.3.3
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /tailwind-merge@1.14.0:
-    resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
     dev: true
 
   /tailwindcss@3.3.3:
