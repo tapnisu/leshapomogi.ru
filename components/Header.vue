@@ -1,5 +1,5 @@
 <template>
   <header class="p-8 bg-black bg-opacity-50">
-    <strong>Лёшапомоги</strong>
+    <a href="/">Лёшапомоги</a>
   </header>
 </template>

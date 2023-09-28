@@ -25,7 +25,9 @@ useHead({
     <div class="w-[768px] flex flex-col justify-between">
       <Header />
       <div class="flex justify-center">
-        <slot />
+        <div>
+          <slot />
+        </div>
       </div>
       <Footer />
     </div>
