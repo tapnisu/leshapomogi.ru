@@ -1,6 +1,6 @@
 <template>
   <BasePageLayout>
-    <article class="prose prose-neutral prose-invert">
+    <article class="prose prose-neutral dark:prose-invert">
       <ContentDoc v-slot="{ doc }">
         <h1>
           {{ doc.title }}

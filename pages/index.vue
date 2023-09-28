@@ -18,7 +18,7 @@ const cpp = [
 
 <template>
   <BasePageLayout>
-    <div class="prose prose-neutral prose-invert">
+    <div class="prose prose-neutral dark:prose-invert">
       <h1 class="text-4xl font-extrabold">Лёша помоги!</h1>
       <p>Сайту лёшапомоги.рф 1 год 🎉</p>
 

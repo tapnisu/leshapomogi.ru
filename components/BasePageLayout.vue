@@ -21,7 +21,9 @@ useHead({
 </script>
 
 <template>
-  <main class="min-h-screen flex justify-center bg-black text-white">
+  <main
+    class="min-h-screen flex justify-center bg-white text-black dark:bg-black dark:text-white"
+  >
     <div class="w-[768px] flex flex-col justify-between">
       <Header />
       <div class="flex justify-center">

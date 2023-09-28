@@ -1,5 +1,7 @@
 <template>
-  <header class="p-8 bg-black bg-opacity-50">
+  <header
+    class="p-8 bg-white text-black dark:bg-black dark:text-white bg-opacity-50"
+  >
     <a href="/">Лёшапомоги</a>
   </header>
 </template>

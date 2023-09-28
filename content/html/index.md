@@ -1,8 +1,6 @@
 ---
-layout: layouts/base.tsx
 title: HTML за 8 класс
 description: Весь учебник по html за 8 класс
-type: html
 ---
 
 # Лабораторный практикум
