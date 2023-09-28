@@ -1,34 +1,6 @@
 import type { PageData } from "lume/core.ts";
 
-interface Path {
-  title: string;
-  href: string;
-}
-
 export default function baseLayout(page: PageData) {
-  const path = page.page.src.path
-    .split("/")
-    .filter((e) => e != "")
-    .reverse();
-  const paths: Path[] = [];
-
-  const pathTemp = page.page.src.path.split("/");
-
-  path.forEach((p) => {
-    if (p == "index") return;
-
-    const href = pathTemp.join("/");
-
-    pathTemp.pop();
-
-    paths.push({
-      title: p,
-      href,
-    });
-  });
-
-  paths.reverse();
-
   return (
     <html lang="ru">
       <head>
@@ -59,16 +31,17 @@ export default function baseLayout(page: PageData) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body class="container">
-        <nav aria-label="breadcrumb">
+        <nav>
           <ul>
             <li>
-              <a href="/">лёшапомоги</a>
+              <a href="/">Главная</a>
             </li>
-            {paths.map((path) => (
-              <li>
-                <a href={path.href}>{path.title}</a>
-              </li>
-            ))}
+          </ul>
+
+          <ul>
+            <li>
+              <strong>лёшапомоги</strong>
+            </li>
           </ul>
         </nav>
 

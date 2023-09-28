@@ -30,10 +30,15 @@ site
   .use(prism())
   .use(jsx_preact())
   .use(esbuild())
-  .use(code_highlight())
+  .use(
+    code_highlight({
+      options: {
+        ignoreUnescapedHTML: true,
+      },
+    })
+  )
   .use(imagick())
   .copy("public", ".")
-  .copy("assets/")
   .copy("css/")
   .hooks.addPostcssPlugin(nano);
 
