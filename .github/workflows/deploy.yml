@@ -28,8 +28,13 @@ jobs:
         with:
           node-version: lts/*
 
+      - run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
       - name: Build step
-        run: "pnpm install && NITRO_PRESET=deno-deploy pnpm run build"
+        run: "NITRO_PRESET=deno-deploy pnpm run build"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
