@@ -1,10 +1,15 @@
+import { Button } from "@components/Button.tsx";
+
 export default function Blog404Page() {
   return (
-    <main class="max-w-screen-md px-4 pt-16 mx-auto">
-      <h1 class="text-5xl font-bold">Oops!</h1>
-      <div class="mt-8">
-        <p>404 Error</p>
-        <p>Sorry about that!</p>
+    <main>
+      <div class="text-center flex flex-col items-center text-3xl">
+        <p>404</p>
+        <p>Не найдено</p>
+
+        <a href="/" className="cursor-pointer">
+          <Button>Вернуться на главную</Button>
+        </a>
       </div>
     </main>
   );

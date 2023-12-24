@@ -1,12 +1,12 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
 import { JSX } from "preact";
 
-export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
+export function Button(props: JSX.HTMLAttributes<HTMLDivElement>) {
   return (
-    <button
+    <div
       {...props}
       disabled={!IS_BROWSER || props.disabled}
-      class="px-2 py-1 border-gray-500 border-2 rounded bg-white hover:bg-gray-200 transition-colors"
+      class="w-fit py-4 px-8 m-2 rounded-full text-white dark:bg-cyan-500 hover:bg-cyan-700 transition-colors "
     />
   );
 }

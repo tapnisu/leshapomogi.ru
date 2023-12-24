@@ -10,7 +10,7 @@ export default function App({ Component }: PageProps) {
         <title>Лёшапомоги</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body>
+      <body class="bg-white text-black dark:bg-[#0d1117] dark:text-white max-w-screen-md px-4 pt-16 mx-auto">
         <Navbar />
         <Component />
         <Footer />

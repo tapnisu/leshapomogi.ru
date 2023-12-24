@@ -1,5 +1,4 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { Card } from "@components/Card.tsx";
 import { Post, getPosts } from "@utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
@@ -12,7 +11,7 @@ export const handler: Handlers<Post[]> = {
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
-    <main class="max-w-screen-md px-4 pt-16 mx-auto">
+    <main>
       <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
       <div class="mt-8">
         {posts.map((post) => (
@@ -26,9 +25,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
 function PostCard(props: { post: Post }) {
   const { post } = props;
   return (
-    <Card>
-      <a class="sm:col-span-2" href={`/${post.slug}`}>
-        <h3 class="text(3xl gray-900) font-bold">{post.title}</h3>
+    <div className="bg-gray-100 text-black dark:bg-gray-950 p-4 m-4 rounded-lg border-2">
+      <a href={`/${post.slug}`}>
+        <h3 class="text-black dark:text-white font-bold">{post.title}</h3>
         <time class="text-gray-500">
           {new Date(post.publishedAt).toLocaleDateString("ru-ru", {
             year: "numeric",
@@ -36,8 +35,8 @@ function PostCard(props: { post: Post }) {
             day: "numeric",
           })}
         </time>
-        <div class="mt-4 text-gray-900">{post.snippet}</div>
+        <div class="text-black dark:text-white">{post.description}</div>
       </a>
-    </Card>
+    </div>
   );
 }
