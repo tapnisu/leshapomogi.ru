@@ -29,7 +29,7 @@ function PostCard(props: { post: Post }) {
       <a class="sm:col-span-2" href={`/${post.slug}`}>
         <h3 class="text(3xl gray-900) font-bold">{post.title}</h3>
         <time class="text-gray-500">
-          {new Date(post.publishedAt).toLocaleDateString("en-us", {
+          {new Date(post.publishedAt).toLocaleDateString("ru-ru", {
             year: "numeric",
             month: "long",
             day: "numeric",
