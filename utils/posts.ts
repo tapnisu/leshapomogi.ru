@@ -19,7 +19,7 @@ export async function getPosts(): Promise<Post[]> {
     const slug = file.name.replace(".md", "");
     promises.push(getPost(slug));
   }
-  const posts = await Promise.all(promises) as Post[];
+  const posts = (await Promise.all(promises)) as Post[];
   posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
   return posts;
 }

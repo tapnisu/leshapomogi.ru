@@ -14,7 +14,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
     <main class="max-w-screen-md px-4 pt-16 mx-auto">
       <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
       <div class="mt-8">
-        {posts.map((post) => <PostCard post={post} />)}
+        {posts.map((post) => (
+          <PostCard post={post} />
+        ))}
       </div>
     </main>
   );
@@ -25,9 +27,7 @@ function PostCard(props: { post: Post }) {
   return (
     <div class="py-8 border-gray-200)">
       <a class="sm:col-span-2" href={`/${post.slug}`}>
-        <h3 class="text(3xl gray-900) font-bold">
-          {post.title}
-        </h3>
+        <h3 class="text(3xl gray-900) font-bold">{post.title}</h3>
         <time class="text-gray-500">
           {new Date(post.publishedAt).toLocaleDateString("en-us", {
             year: "numeric",
@@ -35,9 +35,7 @@ function PostCard(props: { post: Post }) {
             day: "numeric",
           })}
         </time>
-        <div class="mt-4 text-gray-900">
-          {post.snippet}
-        </div>
+        <div class="mt-4 text-gray-900">{post.snippet}</div>
       </a>
     </div>
   );
