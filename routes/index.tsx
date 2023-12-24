@@ -1,4 +1,5 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
+import { Card } from "@components/Card.tsx";
 import { Post, getPosts } from "@utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
@@ -25,7 +26,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
 function PostCard(props: { post: Post }) {
   const { post } = props;
   return (
-    <div class="py-8 border-gray-200)">
+    <Card>
       <a class="sm:col-span-2" href={`/${post.slug}`}>
         <h3 class="text(3xl gray-900) font-bold">{post.title}</h3>
         <time class="text-gray-500">
@@ -37,6 +38,6 @@ function PostCard(props: { post: Post }) {
         </time>
         <div class="mt-4 text-gray-900">{post.snippet}</div>
       </a>
-    </div>
+    </Card>
   );
 }
