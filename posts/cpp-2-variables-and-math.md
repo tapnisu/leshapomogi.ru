@@ -212,7 +212,3 @@ int main() {
 - `pow(x,y)` — xy: возведение числа x в степень y
 - `floor(x)` — округление «вниз»
 - `ceil(x)` — округление «вверх»
-
-## Ссылки
-
-1. [C++ 2 урок презентация](https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14674)

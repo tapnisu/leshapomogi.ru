@@ -107,5 +107,4 @@ F10 для запуска.
 
 ### Ссылки
 
-1. [C++ 1 урок презентация](https://lyceum.nstu.ru/sdo/mod/resource/view.php?id=14542)
-2. [DevC++](https://lyceum.nstu.ru/sdo/mod/url/view.php?id=1790)
+1. [DevC++](https://sourceforge.net/projects/dev-cpp/files/latest/download)
