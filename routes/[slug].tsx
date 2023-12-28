@@ -24,7 +24,7 @@ export default function PostPage(props: PageProps<Post>) {
         <meta name="description" content={post.description} />
       </Head>
 
-      <main>
+      <main className="bg-white dark:bg-[#0d1117] p-4 rounded-lg">
         <h1 class="text-5xl font-bold">{post.title}</h1>
         <time class="text-gray-500">
           {new Date(post.publishedAt).toLocaleDateString("ru-ru", {

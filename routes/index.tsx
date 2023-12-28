@@ -24,9 +24,10 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
 
 function PostCard(props: { post: Post }) {
   const { post } = props;
+
   return (
-    <div className="bg-gray-100 text-black dark:bg-gray-950 p-4 m-4 rounded-lg border-2">
-      <a href={`/${post.slug}`}>
+    <a href={`/${post.slug}`}>
+      <div className="bg-white text-black dark:bg-[#0d1117] p-4 m-4 rounded-lg">
         <h3 class="text-black dark:text-white font-bold">{post.title}</h3>
         <time class="text-gray-500">
           {new Date(post.publishedAt).toLocaleDateString("ru-ru", {
@@ -36,7 +37,7 @@ function PostCard(props: { post: Post }) {
           })}
         </time>
         <div class="text-black dark:text-white">{post.description}</div>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }
