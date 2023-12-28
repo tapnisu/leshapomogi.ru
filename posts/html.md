@@ -1,5 +1,5 @@
 ---
-title: HTML за 8 класс
+title: HTML
 description: Весь учебник по html за 8 класс
 published_at: 2024-12-24
 ---
