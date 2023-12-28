@@ -10,10 +10,12 @@ export default function App({ Component }: PageProps) {
         <title>Лёшапомоги</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-gray-100 text-black dark:bg-gray-950 dark:text-white max-w-screen-md px-4 pt-16 mx-auto">
-        <Navbar />
-        <Component />
-        <Footer />
+      <body class="bg-gray-100 text-black dark:bg-gray-950 dark:text-white p-4 flex flex-col items-center">
+        <div class="max-w-screen-md">
+          <Navbar />
+          <Component />
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,3 +1,11 @@
 export default function Navbar() {
-  return <nav className="sticky top-0 w-full"></nav>;
+  return (
+    <nav className="w-full py-2">
+      <a href="/">
+        <div className="p-4 text-white bg-cyan-600 hover:bg-cyan-500 rounded-full transition-colors w-fit">
+          Главная
+        </div>
+      </a>
+    </nav>
+  );
 }
