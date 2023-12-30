@@ -18,7 +18,7 @@ export default function App({ Component }: PageProps) {
         <meta name="twitter:site" content="@tapnisu" />
       </Head>
 
-      <body class="bg-gray-100 text-black dark:bg-gray-950 dark:text-white p-4 flex flex-col items-center">
+      <body class="bg-gray-100 text-black dark:bg-gray-950 dark:text-white p-4">
         <div class="max-w-screen-md">
           <Navbar />
           <Component />
