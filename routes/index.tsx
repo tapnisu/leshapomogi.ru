@@ -22,7 +22,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
         <meta name="og:description" content="Всякие записи от Лёши" />
       </Head>
 
-      <main class="p-4">
+      <main class="py-4">
         <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
         <div class="mt-8">
           {Object.keys(courses).map((course) => (
