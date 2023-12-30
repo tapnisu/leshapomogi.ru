@@ -14,7 +14,7 @@ export default function Blog404Page() {
           <p>404</p>
           <p>Не найдено</p>
 
-          <a href="/" className="cursor-pointer">
+          <a href="/" class="cursor-pointer">
             <Button>Вернуться на главную</Button>
           </a>
         </div>
