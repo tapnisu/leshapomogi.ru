@@ -20,7 +20,7 @@ export async function getPosts(): Promise<Post[]> {
     promises.push(getPost(slug));
   }
   const posts = (await Promise.all(promises)) as Post[];
-  posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
+  posts.sort((a, b) => a.title.localeCompare(b.title));
   return posts;
 }
 
