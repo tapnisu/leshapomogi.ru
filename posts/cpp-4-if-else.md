@@ -1,5 +1,5 @@
 ---
-title: C++ Урок 4 - ветвления (if)
+title: Урок 4 - ветвления (if)
 description: Ветвления (if) и как их использовать
 published_at: 2023-02-22
 course: C++ 9 Класс
