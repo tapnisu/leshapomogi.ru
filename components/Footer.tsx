@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer class="py-4">
-      <h2 class="text-xl font-bold">Написать леше</h2>
+      <h2 class="text-xl font-bold">Написать Лешё</h2>
       <ul class="flex">
         <li>
           <a
