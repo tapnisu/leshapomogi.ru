@@ -44,7 +44,7 @@ function PostCard(props: { post: Post }) {
 
   return (
     <a href={`/${post.slug}`}>
-      <div class="bg-white text-black hover:bg-gray-200 dark:bg-[#0d1117] dark:hover:bg-gray-600 transition-colors p-4 my-4 rounded-lg">
+      <div class="bg-white text-black hover:bg-cyan-100 dark:bg-[#0d1117] dark:hover:bg-gray-600 transition-colors p-4 my-4 rounded-lg">
         <h3 class="text-black dark:text-white font-bold">{post.title}</h3>
         <time class="text-gray-300">
           {new Date(post.publishedAt).toLocaleDateString("ru-ru", {
