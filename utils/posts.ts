@@ -23,8 +23,12 @@ export async function getPosts(): Promise<Post[]> {
   }
 
   const posts = (await Promise.all(promises)) as Post[];
-  posts.sort((a, b) => a.title.localeCompare(b.title));
-  return posts;
+
+  return posts.sort((a, b) => {
+    const courseComp = a.course.localeCompare(b.course);
+
+    return courseComp != 0 ? courseComp : a.title.localeCompare(b.title);
+  });
 }
 
 // Get post.

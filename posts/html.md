@@ -1,7 +1,8 @@
 ---
-title: HTML
+title: HTML за 8 класс
 description: Весь учебник по HTML за 8 класс
 published_at: 2022-04-22
+course: HTML за 8 класс
 ---
 
 # Лабораторный практикум
