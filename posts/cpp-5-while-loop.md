@@ -1,7 +1,7 @@
 ---
 title: C++ Урок 5 - цикл while
 description: Ветвления (if) и как их использовать
-published_at: 2024-12-30
+published_at: 2023-12-30
 ---
 
 ## Что такое цикл while?
