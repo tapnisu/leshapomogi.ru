@@ -20,8 +20,9 @@ export default function PostPage(props: PageProps<Post>) {
     <>
       <Head>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
-        <title>{post.title}</title>
+        <title>{post.title} / Лёшапомоги</title>
         <meta name="description" content={post.description} />
+        <meta name="og:description" content={post.description} />
       </Head>
 
       <main className="bg-white dark:bg-[#0d1117] p-4 rounded-lg">

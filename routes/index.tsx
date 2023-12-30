@@ -1,3 +1,4 @@
+import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Post, getPosts } from "@utils/posts.ts";
 
@@ -11,14 +12,22 @@ export const handler: Handlers<Post[]> = {
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
-    <main class="p-4 m-4">
-      <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
-      <div class="mt-8">
-        {posts.map((post) => (
-          <PostCard post={post} />
-        ))}
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>Лёшапомоги</title>
+        <meta name="description" content="Всякие записи от Лёши" />
+        <meta name="og:description" content="Всякие записи от Лёши" />
+      </Head>
+
+      <main class="p-4 m-4">
+        <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
+        <div class="mt-8">
+          {posts.map((post) => (
+            <PostCard post={post} />
+          ))}
+        </div>
+      </main>
+    </>
   );
 }
 
