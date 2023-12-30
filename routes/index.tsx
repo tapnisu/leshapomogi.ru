@@ -10,7 +10,10 @@ export const handler: Handlers<Post[]> = {
 };
 
 export default function BlogIndexPage(props: PageProps<Post[]>) {
-  const posts = props.data;
+  const groups = Object.fromEntries(
+    Map.groupBy(props.data, (post) => post.course)
+  );
+
   return (
     <>
       <Head>
@@ -22,8 +25,13 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <main class="p-4">
         <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
         <div class="mt-8">
-          {posts.map((post) => (
-            <PostCard post={post} />
+          {Object.keys(groups).map((group) => (
+            <>
+              <h2 class="text-4xl">{group}</h2>
+              {groups[group].map((post) => (
+                <PostCard post={post} />
+              ))}
+            </>
           ))}
         </div>
       </main>
