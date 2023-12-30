@@ -2,7 +2,7 @@
 title: Урок 5 - цикл while
 description: Цикл while и как его использовать
 published_at: 2023-12-30
-course: C++ 9 Класс
+course: C++ 9 класс
 ---
 
 ## Что такое цикл while?
