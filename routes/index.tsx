@@ -11,7 +11,7 @@ export const handler: Handlers<Post[]> = {
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
-    <main>
+    <main class="p-4 m-4">
       <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
       <div class="mt-8">
         {posts.map((post) => (
