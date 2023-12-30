@@ -36,9 +36,9 @@ function PostCard(props: { post: Post }) {
 
   return (
     <a href={`/${post.slug}`}>
-      <div className="bg-white text-black hover:bg-gray-200 dark:bg-[#0d1117] dark:hover:bg-gray-900 transition-colors p-4 my-4 rounded-lg">
+      <div className="bg-white text-black hover:bg-gray-200 dark:bg-[#0d1117] dark:hover:bg-gray-600 transition-colors p-4 my-4 rounded-lg">
         <h3 class="text-black dark:text-white font-bold">{post.title}</h3>
-        <time class="text-gray-500">
+        <time class="text-gray-300">
           {new Date(post.publishedAt).toLocaleDateString("ru-ru", {
             year: "numeric",
             month: "long",
