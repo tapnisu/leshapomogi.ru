@@ -3,9 +3,12 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { CSS, render } from "$gfm";
 import { Post, getPost } from "@utils/posts.ts";
 
+import "https://esm.sh/prismjs@1.29.0/components/prism-bash?no-check&pin=v57";
+
 // prism-cpp requires prism-c to be loaded
 import "https://esm.sh/prismjs@1.29.0/components/prism-c?no-check&pin=v57";
 import "https://esm.sh/prismjs@1.29.0/components/prism-cpp?no-check&pin=v57";
+
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
@@ -24,7 +27,7 @@ export default function PostPage(props: PageProps<Post>) {
     <>
       <Head>
         <style dangerouslySetInnerHTML={{ __html: CSS }} />
-        <title>{post.title} / Лёшапомоги</title>
+        <title>{post.title} - Лёшапомоги</title>
         <meta name="description" content={post.description} />
         <meta name="og:description" content={post.description} />
       </Head>
