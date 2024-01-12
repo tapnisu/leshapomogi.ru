@@ -12,11 +12,7 @@
     "fmt": "deno run --allow-read --allow-write --allow-sys --allow-env npm:prettier . --write",
     "format": "deno run --allow-read --allow-write --allow-sys --allow-env npm:prettier . --write"
   },
-  "lint": {
-    "rules": {
-      "tags": ["fresh", "recommended"]
-    }
-  },
+  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "exclude": ["**/_fresh/*"],
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.6.1/",
@@ -34,9 +30,6 @@
     "@components/": "./components/",
     "@islands/": "./islands/"
   },
-  "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "preact"
-  },
+  "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "nodeModulesDir": true
 }
