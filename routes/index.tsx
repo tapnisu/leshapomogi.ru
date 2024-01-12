@@ -24,7 +24,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
 
       <main class="py-4">
         <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
-        <p>Всех с новым годом!!!</p>
+
         <div class="mt-8">
           {Object.keys(courses).map((course) => (
             <>
