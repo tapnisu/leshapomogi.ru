@@ -25,21 +25,21 @@ python -m venv .venv
 
 1. Мы создаем папку с названием `myproject` при помощи команды `mkdir`
 
-```sh
-mkdir myproject
-```
+   ```sh
+   mkdir myproject
+   ```
 
 2. Мы переходим в нашу папку `myproject` при помощи команды `cd`
 
-```sh
-cd myproject
-```
+   ```sh
+   cd myproject
+   ```
 
 3. Мы создаем виртуальную среду при помощи модуля `venv`
 
-```sh
-python -m venv .venv
-```
+   ```sh
+   python -m venv .venv
+   ```
 
 > На linux используйте python3 вместо python.
 
