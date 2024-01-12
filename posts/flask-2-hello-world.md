@@ -53,4 +53,4 @@ flask --app hello run
 
 ## Ссылки
 
-1. [Quickstart - Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application)
+1. [A Minimal Application - Quickstart - Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application)

@@ -43,4 +43,4 @@ flask run
 
 ## Ссылки
 
-1. [Quickstart - Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/quickstart/#routing)
+1. [Routing - Quickstart - Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/quickstart/#routing)
