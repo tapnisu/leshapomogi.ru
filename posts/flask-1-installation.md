@@ -21,7 +21,7 @@ python -m venv .venv
 
 > На linux используйте python3 вместо python.
 
-Что же делает то, что мы сейчас запустили?
+### Что же делает то, что мы сейчас запустили?
 
 1. Мы создаем папку с названием `myproject` при помощи команды `mkdir`
 
@@ -71,4 +71,4 @@ pip install Flask
 
 ## Ссылки
 
-1. [Installation - Flask](https://flask.palletsprojects.com/en/3.0.x/installation/)
+1. [Installation - Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/installation/)
