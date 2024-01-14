@@ -24,7 +24,6 @@
     "fresh_seo/": "https://deno.land/x/fresh_seo@1.0.1/",
     "$std/": "https://deno.land/std@0.211.0/",
     "$gfm": "https://deno.land/x/gfm@0.4.0/mod.ts",
-    "feed": "https://esm.sh/feed@4.2.2",
     "@utils/": "./utils/",
     "@components/": "./components/",
     "@islands/": "./islands/"
