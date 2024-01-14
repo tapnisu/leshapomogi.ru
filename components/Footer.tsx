@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer class="py-4">
       <h2 class="text-xl font-bold">Написать Лёше</h2>
-      <ul class="flex">
+      <ul class="flex list-none">
         <li>
           <a
             href="https://t.me/osnwe"

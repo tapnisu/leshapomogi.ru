@@ -1,3 +1,15 @@
 @tailwind base;
+
+@layer base {
+  /* Lists */
+  ol {
+    list-style-type: decimal;
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
