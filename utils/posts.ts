@@ -42,6 +42,6 @@ export async function getPost(slug: string): Promise<Post | null> {
     publishedAt: new Date(attrs.published_at as string),
     content: body,
     description: attrs.description as string,
-    course: (attrs.course as string) || "Другое",
+    course: (attrs.course as string) ?? "Другое",
   };
 }
