@@ -5,7 +5,7 @@ export default function Footer() {
       <ul class="flex list-none">
         <li>
           <a
-            href="https://t.me/osnwe"
+            href="https://t.me/tapnisu"
             class="underline hover:cursor-pointer hover:text-cyan-500 transition-colors"
           >
             Telegram
