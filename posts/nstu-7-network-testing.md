@@ -32,7 +32,7 @@ course: ИЛ НГТУ
 
 ## Задание 3 - Определите ip адреса сайтов
 
-Воспользуемся нашей командой `ping` - `ping www.google.com`
+Воспользуемся нашей командой в cmd `ping` - `ping www.google.com`
 
 ```
 > ping www.google.com
@@ -57,3 +57,13 @@ course: ИЛ НГТУ
 |  www.yale.edu  | `151.101.86.133` |
 |  shkolaedu.ru  |                  |
 |    spb.edu     | `195.70.196.197` |
+
+## Задание 4 - Определите, сколько "прыжкой" до следующих сайтов:
+
+Воспользуемся нашей командой в cmd `tracert` - `tracert www.google.ua`
+
+|      Сайт      | IP-адрес |
+| :------------: | :------: |
+| www.rambler.ru |    ?     |
+| www.yandex.ru  |    6     |
+| www.google.ua  |    11    |
