@@ -417,7 +417,7 @@ HTML-документа и на основе создать свою
   </head>
   <body bgcolor="#edf3ff">
     <h1 align="center"><font color="red">Название картинки</font></h1>
-    <img src="1.jpg" width="300" heigh="250" />
+    <img src="1.jpg" width="300" height="250" />
     <p>
       <font color="blue">
         Это картинку вставил студента 1-го курса Фамилия Имя
