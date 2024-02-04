@@ -4,13 +4,13 @@ import { CSS, render } from "$gfm";
 import { Post, getPost } from "@utils/posts.ts";
 
 // Syntax highlighting
-import "https://esm.sh/prismjs@1.29.0/components/prism-bash?no-check&pin=v57";
+import "https://esm.sh/prismjs@1.29.0/components/prism-bash";
 
-import "https://esm.sh/prismjs@1.29.0/components/prism-python?no-check&pin=v57";
+import "https://esm.sh/prismjs@1.29.0/components/prism-python";
 
 // prism-cpp requires prism-c to be loaded
-import "https://esm.sh/prismjs@1.29.0/components/prism-c?no-check&pin=v57";
-import "https://esm.sh/prismjs@1.29.0/components/prism-cpp?no-check&pin=v57";
+import "https://esm.sh/prismjs@1.29.0/components/prism-c";
+import "https://esm.sh/prismjs@1.29.0/components/prism-cpp";
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
