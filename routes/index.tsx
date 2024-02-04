@@ -4,14 +4,15 @@ import { Post, getPosts } from "@utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
   async GET(_req, ctx) {
-    const posts = await getPosts();
+    const posts = (await getPosts()).filter((post) => !post.hidden);
+
     return ctx.render(posts);
   },
 };
 
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const courses = Object.fromEntries(
-    Map.groupBy(props.data, (post) => post.course),
+    Map.groupBy(props.data, (post) => post.course)
   );
 
   return (

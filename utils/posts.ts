@@ -10,6 +10,7 @@ export interface Post {
   description: string;
   course: string;
   content: string;
+  hidden: boolean;
 }
 
 // Get posts.
@@ -43,5 +44,6 @@ export async function getPost(slug: string): Promise<Post | null> {
     content: body,
     description: attrs.description as string,
     course: (attrs.course as string) ?? "Другое",
+    hidden: (attrs.hidden as boolean) ?? false,
   };
 }
