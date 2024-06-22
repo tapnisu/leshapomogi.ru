@@ -1,10 +1,7 @@
-FROM denoland/deno:alpine
-
-ARG GIT_REVISION
-ENV DENO_DEPLOYMENT_ID=${GIT_REVISION}
+FROM denoland/deno:alpine-1.44.4
+LABEL authors="tapnisu"
 
 WORKDIR /app
-
 COPY . .
 RUN deno task build
 
