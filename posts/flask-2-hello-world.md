@@ -49,7 +49,7 @@ def hello_world():
 flask --app hello run
 ```
 
-Где `hello` - название нашего файла.
+Где *hello* - название нашего файла.
 
 ## Ссылки
 
