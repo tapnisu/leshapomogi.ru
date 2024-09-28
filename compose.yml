@@ -26,9 +26,9 @@ services:
     image: tapnisu/leshapomogi.ru:latest
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.guestbook.rule=Host(`leshapomogi.ru`, `www.leshapomogi.ru`, `xn--80agpjglbf3f6d.xn--p1ai`, `www.xn--80agpjglbf3f6d.xn--p1ai`, `xn--80ageolinbg2g.xn--p1ai`, `www.xn--80ageolinbg2g.xn--p1ai`)"
-      - "traefik.http.routers.guestbook.entrypoints=websecure"
-      - "traefik.http.routers.guestbook.tls.certresolver=myresolver"
+      - "traefik.http.routers.leshapomogi.rule=Host(`leshapomogi.ru`) || Host(`www.leshapomogi.ru`) || Host(`xn--80agpjglbf3f6d.xn--p1ai`) || Host(`www.xn--80agpjglbf3f6d.xn--p1ai`) || Host(`xn--80ageolinbg2g.xn--p1ai`) || Host(`www.xn--80ageolinbg2g.xn--p1ai`)"
+      - "traefik.http.routers.leshapomogi.entrypoints=websecure"
+      - "traefik.http.routers.leshapomogi.tls.certresolver=myresolver"
       - "com.centurylinklabs.watchtower.enable=true"
     deploy:
       mode: replicated
