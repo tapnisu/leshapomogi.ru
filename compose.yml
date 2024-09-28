@@ -14,12 +14,6 @@ services:
       - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
       - "--certificatesresolvers.myresolver.acme.email=aleksei@tapni.su"
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
-
-      - "traefik.http.middlewares.secondary-domain1.redirectregex.regex=^http://лёшапомоги.рф/(.*)"
-      - "traefik.http.middlewares.secondary-domain1.redirectregex.replacement=http://leshapomogi.ru/$${1}"
-
-      - "traefik.http.middlewares.secondary-domain1.redirectregex.regex=^http://лешапомоги.рф/(.*)"
-      - "traefik.http.middlewares.secondary-domain1.redirectregex.replacement=http://leshapomogi.ru/$${1}"
     ports:
       - "80:80"
       - "443:443"
@@ -32,7 +26,7 @@ services:
     image: tapnisu/leshapomogi.ru:latest
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.guestbook.rule=Host(`leshapomogi.ru`)"
+      - "traefik.http.routers.guestbook.rule=Host(`leshapomogi.ru`, `www.leshapomogi.ru`, `лёшапомоги.рф`, `www.лёшапомоги.рф`, `лешапомоги.рф`, `www.лешапомоги.рф`)"
       - "traefik.http.routers.guestbook.entrypoints=websecure"
       - "traefik.http.routers.guestbook.tls.certresolver=myresolver"
       - "com.centurylinklabs.watchtower.enable=true"
