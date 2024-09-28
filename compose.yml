@@ -30,8 +30,8 @@ services:
       - traefik.http.routers.leshapomogi.entrypoints=websecure
       - traefik.http.routers.leshapomogi.tls.certresolver=myresolver
 
-      - traefik.http.middlewares.leshapomogiredirect.redirectregex.regex=^https://www\.(.*)
-      - traefik.http.middlewares.leshapomogiredirect.redirectregex.replacement=https://$${1}
+      - traefik.http.middlewares.leshapomogiredirect.redirectregex.regex=^https://.*/(.*)$
+      - traefik.http.middlewares.leshapomogiredirect.redirectregex.replacement=https://leshapomogi.ru/$${1}
       - traefik.http.routers.leshapomogi.middlewares=leshapomogiredirect
 
       - com.centurylinklabs.watchtower.enable=true
