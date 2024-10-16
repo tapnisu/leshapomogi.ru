@@ -1,43 +1,10 @@
 services:
-  reverse-proxy:
-    image: traefik:v3.1
-    command:
-      - "--providers.docker"
-      - "--providers.docker.exposedbydefault=false"
-
-      - "--entrypoints.websecure.address=:443"
-
-      - "--entrypoints.web.address=:80"
-      - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
-      - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
-
-      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
-      - "--certificatesresolvers.myresolver.acme.email=aleksei@tapni.su"
-      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - letsencrypt:/letsencrypt
-      - /var/run/docker.sock:/var/run/docker.sock
-    restart: unless-stopped
-
   frontend:
-    image: tapnisu/leshapomogi.ru
+    image: tapnisu/leshapomogi.ru:main
+    ports:
+      - "8000:8000"
     labels:
-      - traefik.enable=true
-      - traefik.http.routers.leshapomogi.rule=Host(`leshapomogi.ru`) || Host(`www.leshapomogi.ru`) || Host(`xn--80agpjglbf3f6d.xn--p1ai`) || Host(`www.xn--80agpjglbf3f6d.xn--p1ai`) || Host(`xn--80ageolinbg2g.xn--p1ai`) || Host(`www.xn--80ageolinbg2g.xn--p1ai`)
-      - traefik.http.routers.leshapomogi.entrypoints=websecure
-      - traefik.http.routers.leshapomogi.tls.certresolver=myresolver
-
-      - traefik.http.middlewares.leshapomogiredirect.redirectregex.regex=^https://.*/(.*)$
-      - traefik.http.middlewares.leshapomogiredirect.redirectregex.replacement=https://leshapomogi.ru/$${1}
-      - traefik.http.routers.leshapomogi.middlewares=leshapomogiredirect
-
-      - com.centurylinklabs.watchtower.enable=true
-    deploy:
-      mode: replicated
-      replicas: 3
+      - "com.centurylinklabs.watchtower.enable=true"
     restart: unless-stopped
 
   watchtower:
@@ -46,10 +13,7 @@ services:
       - "--label-enable"
       - "--interval"
       - "30"
-      - "--rolling-restart"
+      - "--cleanup"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
-
-volumes:
-  letsencrypt:
