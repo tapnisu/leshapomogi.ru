@@ -12,7 +12,7 @@ export const handler: Handlers<Post[]> = {
 
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const courses = Object.fromEntries(
-    Map.groupBy(props.data, (post) => post.course)
+    Map.groupBy(props.data, (post) => post.course),
   );
 
   return (

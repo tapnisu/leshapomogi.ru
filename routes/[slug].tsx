@@ -34,7 +34,9 @@ export default function PostPage(props: PageProps<Post>) {
         <meta name="og:description" content={post.description} />
       </Head>
 
-      <a href="/" class="text-xl underline-offset-4 hover:underline">← Вернуться на главную</a>
+      <a href="/" class="text-xl underline-offset-4 hover:underline">
+        ← Вернуться на главную
+      </a>
 
       <main class="bg-white dark:bg-[#0d1117] p-4 rounded-lg mt-8">
         <h1 class="text-5xl font-bold">{post.title}</h1>

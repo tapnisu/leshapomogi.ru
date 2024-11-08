@@ -7,7 +7,7 @@ course: Flask
 
 ## Минимальные требования
 
-Flask требует версию *python >= 3.8*
+Flask требует версию _python >= 3.8_
 
 ## Создание проекта
 
@@ -19,7 +19,7 @@ cd myproject
 python -m venv .venv
 ```
 
-> На *linux* используйте *python3* вместо *python*.
+> На _linux_ используйте _python3_ вместо _python_.
 
 ### Что же делает то, что мы сейчас запустили?
 
@@ -41,7 +41,7 @@ python -m venv .venv
    python -m venv .venv
    ```
 
-> На linux используйте *python3* вместо *python*.
+> На linux используйте _python3_ вместо _python_.
 
 ### Что такое виртуальная среда и зачем она нам нужна?
 
