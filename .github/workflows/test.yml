@@ -3,15 +3,15 @@ name: Test
 on: push
 
 jobs:
-  lint:
-    name: Lint
+  ubuntu-latest:
+    name: Ubuntu-latest
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - uses: denoland/setup-deno@v1
         with:
-          deno-version: v1.x
+          deno-version: v2.x
+
       - name: Check
         run: deno task check
-      - name: Lint
-        run: deno task lint
