@@ -3,9 +3,10 @@ name: Test
 on: push
 
 jobs:
-  lint:
-    name: Lint
+  ubuntu-latest:
+    name: Ubuntu-latest
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
       - uses: denoland/setup-deno@v1
