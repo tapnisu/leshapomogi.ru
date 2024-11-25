@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { CSS, render } from "$gfm";
-import { Post, getPost } from "@utils/posts.ts";
+import { CSS, render } from "@deno/gfm";
+import { getPost, Post } from "@utils/posts.ts";
 
 // Syntax highlighting
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash";
