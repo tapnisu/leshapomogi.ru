@@ -1,5 +1,4 @@
 import { Head } from "$fresh/runtime.ts";
-import { Button } from "@components/Button.tsx";
 
 export default function Blog404Page() {
   return (
@@ -14,8 +13,11 @@ export default function Blog404Page() {
           <p>404</p>
           <p>Не найдено</p>
 
-          <a href="/" class="cursor-pointer">
-            <Button>Вернуться на главную</Button>
+          <a
+            href="/"
+            class="w-fit py-4 px-8 m-2 rounded-full text-white dark:bg-cyan-500 hover:bg-cyan-700 transition-colorscursor-pointer"
+          >
+            Вернуться на главную
           </a>
         </div>
       </main>
