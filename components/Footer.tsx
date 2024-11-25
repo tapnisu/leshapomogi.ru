@@ -12,7 +12,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <pre> / </pre>
+          <pre> /</pre>
         </li>
         <li>
           <a
