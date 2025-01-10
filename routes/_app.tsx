@@ -11,9 +11,9 @@ export default function App({ Component }: PageProps) {
         <link rel="stylesheet" href="/styles.css" />
         <meta name="apple-mobile-web-app-title" content="Лёшапомоги" />
         <meta name="theme-color" content="#0891b2" />
-        <meta name="og:image" content="https://leshapomogi.ru/og.png" />
+        <meta name="og:image" content="https://leshapomogi.ru/og.jpg" />
         <meta name="og:url" content="https://leshapomogi.ru/" />
-        <meta name="twitter:image" content="https://leshapomogi.ru/og.png" />
+        <meta name="twitter:image" content="https://leshapomogi.ru/og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tapnisu" />
       </Head>
