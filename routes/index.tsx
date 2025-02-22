@@ -32,7 +32,9 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
           {Object.keys(courses).map((course) => (
             <>
               <h2 class="text-4xl font-bold">{course}</h2>
-              {courses[course].map((post) => <PostCard post={post} />)}
+              {courses[course].map((post) => (
+                <PostCard post={post} key={post.slug} />
+              ))}
             </>
           ))}
         </div>
