@@ -12,7 +12,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <pre>{" / "}</pre>
+          <pre>&nbsp;/&nbsp;</pre> {/* " / " */}
         </li>
         <li>
           <a
