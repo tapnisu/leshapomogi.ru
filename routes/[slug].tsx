@@ -28,7 +28,7 @@ export default function PostPage(props: PageProps<Post>) {
   return (
     <>
       <Head>
-        <style dangerouslySetInnerHTML={{ __html: CSS }} />
+        <style>{CSS}</style>
         <title>{post.title} - Лёшапомоги</title>
         <meta name="description" content={post.description} />
         <meta name="og:description" content={post.description} />
@@ -52,6 +52,7 @@ export default function PostPage(props: PageProps<Post>) {
           data-color-mode="auto"
           data-light-theme="light"
           data-dark-theme="dark"
+          // deno-lint-ignore react-no-danger
           dangerouslySetInnerHTML={{ __html: render(post.content) }}
         />
       </main>
