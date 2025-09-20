@@ -1,7 +1,0 @@
-{
-  "promptDelete": false,
-  "userIgnoreFilters": [
-    "/*",
-    "!/posts/"
-  ]
-}
