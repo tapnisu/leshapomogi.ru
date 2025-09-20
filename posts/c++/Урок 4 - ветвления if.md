@@ -1,10 +1,10 @@
 ---
 title: Урок 4 - ветвления if
+slug: cpp-4-if-else
 description: Ветвления if и как их использовать
 published_at: 2023-02-22
 course: C++
 ---
-
 ## Кто такой ваш if и с чем его едят
 
 ```cpp

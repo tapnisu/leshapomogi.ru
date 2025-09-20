@@ -1,10 +1,10 @@
 ---
 title: HTML за 8 класс
+slug: html
 description: Весь учебник по HTML за 8 класс
 published_at: 2022-04-22
 course: HTML за 8 класс
 ---
-
 # Лабораторный практикум
 
 Создание сайта с помощью языка разметки HTML

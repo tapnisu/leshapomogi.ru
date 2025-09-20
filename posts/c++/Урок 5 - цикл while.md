@@ -1,10 +1,10 @@
 ---
 title: Урок 5 - цикл while
+slug: cpp-5-while-loop
 description: Цикл while и как его использовать
 published_at: 2023-12-30
 course: C++
 ---
-
 ## Что такое цикл _while_?
 
 Цикл _while_ (в переводе с английского: пока) позволяет многократно выполнять

@@ -4,6 +4,7 @@ import { join } from "@std/path/posix";
 const DIRECTORY = "./posts";
 
 export interface Post {
+  path: string;
   slug: string;
   title: string;
   publishedAt: Date;
@@ -15,12 +16,19 @@ export interface Post {
 
 // Get posts.
 export async function getPosts(): Promise<Post[]> {
-  const files = Deno.readDir(DIRECTORY);
   const promises = [];
 
-  for await (const file of files) {
-    const slug = file.name.replace(".md", "");
-    promises.push(getPost(slug));
+  for await (const courseDir of Deno.readDir(DIRECTORY)) {
+    if (courseDir.isDirectory) {
+      const coursePath = join(DIRECTORY, courseDir.name);
+
+      for await (const file of Deno.readDir(coursePath)) {
+        if (file.isFile && file.name.endsWith(".md")) {
+          const path = join(courseDir.name, file.name.replace(/\.md$/, ""));
+          promises.push(getPost(path));
+        }
+      }
+    }
   }
 
   const posts = (await Promise.all(promises)) as Post[];
@@ -34,6 +42,7 @@ export async function getPosts(): Promise<Post[]> {
 
 interface Attributes {
   title: string;
+  slug: string;
   published_at: string;
   description: string;
   course?: string;
@@ -41,13 +50,14 @@ interface Attributes {
 }
 
 // Get post.
-export async function getPost(slug: string): Promise<Post | null> {
-  const text = await Deno.readTextFile(join(DIRECTORY, `${slug}.md`));
+export async function getPost(path: string): Promise<Post | null> {
+  const text = await Deno.readTextFile(join(DIRECTORY, `${path}.md`));
   const { attrs, body } = extract<Attributes>(text);
 
   return {
-    slug,
+    path,
     title: attrs.title,
+    slug: attrs.slug,
     publishedAt: new Date(attrs.published_at),
     content: body,
     description: attrs.description,
