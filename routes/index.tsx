@@ -26,8 +26,6 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
       <main class="py-4">
         <h1 class="text-5xl font-bold">Лёшапомоги!!!</h1>
 
-        <p>Передаю привет МБОУ "Калининская СОШ"</p>
-
         <div class="mt-8">
           {Object.keys(courses).map((course) => (
             <>
