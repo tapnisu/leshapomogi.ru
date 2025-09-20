@@ -3,7 +3,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { CSS, render } from "@deno/gfm";
-import { getPost, Post } from "@utils/posts.ts";
+import { postsHashset, Post } from "@utils/posts.ts";
 
 // Syntax highlighting
 import "https://esm.sh/prismjs@1.29.0/components/prism-bash?no-dts";
@@ -14,7 +14,7 @@ import "https://esm.sh/prismjs@1.29.0/components/prism-cpp?no-dts";
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
     try {
-      const post = await getPost(ctx.params.slug);
+      const post = postsHashset.get(ctx.params.slug)!;
       return ctx.render(post as Post);
     } catch {
       return ctx.renderNotFound();

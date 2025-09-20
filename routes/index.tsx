@@ -1,12 +1,12 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { getPosts, Post } from "@utils/posts.ts";
+import { posts, Post } from "@utils/posts.ts";
 
 export const handler: Handlers<Post[]> = {
-  async GET(_req, ctx) {
-    const posts = (await getPosts()).filter((post) => !post.hidden);
+  GET(_req, ctx) {
+    const filteredPosts = posts.filter((post) => !post.hidden);
 
-    return ctx.render(posts);
+    return ctx.render(filteredPosts);
   },
 };
 

@@ -34,6 +34,12 @@ export async function getPosts(): Promise<Post[]> {
   const posts = (await Promise.all(promises)) as Post[];
 
   return posts.sort((a, b) => {
+    const aIsCyrillic = /[\u0400-\u04FF]/.test(a.course);
+    const bIsCyrillic = /[\u0400-\u04FF]/.test(b.course);
+
+    if (aIsCyrillic && !bIsCyrillic) return 1;
+    if (!aIsCyrillic && bIsCyrillic) return -1;
+
     const courseComp = a.course.localeCompare(b.course);
 
     return courseComp != 0 ? courseComp : a.title.localeCompare(b.title);
@@ -65,3 +71,14 @@ export async function getPost(path: string): Promise<Post | null> {
     hidden: (attrs.hidden) ?? false,
   };
 }
+
+export function getPostsHashset(posts: Post[]) {
+  const map = new Map<string, Post>();
+  for (const post of posts) {
+    map.set(post.slug, post);
+  }
+  return map;
+}
+
+export const posts = await getPosts();
+export const postsHashset = getPostsHashset(posts);
