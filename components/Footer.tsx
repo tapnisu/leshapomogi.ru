@@ -13,15 +13,7 @@ export default function Footer() {
         </li>
         <li>
           <pre>&nbsp;/&nbsp;</pre> {/* " / " */}
-        </li>
-        <li>
-          <a
-            href="https://vk.com/tapnisu"
-            class="underline hover:cursor-pointer hover:text-cyan-500 transition-colors"
-          >
-            VK
-          </a>
-        </li>
+        </li>    
       </ul>
     </footer>
   );
