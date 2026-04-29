@@ -13,7 +13,15 @@ export default function Footer() {
         </li>
         <li>
           <pre>&nbsp;/&nbsp;</pre> {/* " / " */}
-        </li>    
+        </li>
+        <li>
+          <a
+            href="mailto:aleksei@tapni.su"
+            class="underline hover:cursor-pointer hover:text-cyan-500 transition-colors"
+          >
+            Почта
+          </a>
+        </li>
       </ul>
     </footer>
   );
