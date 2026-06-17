@@ -1,8 +1,7 @@
-# Fresh build directory
-_fresh/
+.DS_Store
+.env
+/node_modules/
 
-# npm dependencies
-node_modules/
-
-# obsidian
-.obsidian
+# React Router
+/.react-router/
+/build/

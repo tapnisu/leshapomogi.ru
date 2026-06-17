@@ -1,11 +1,4 @@
-# Fresh build directory
-_fresh/
-
-# npm dependencies
-node_modules/
-
-# obsidian
-.obsidian
-
-.vscode
-.github
+.react-router
+build
+node_modules
+README.md
