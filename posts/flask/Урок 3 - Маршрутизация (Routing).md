@@ -4,6 +4,7 @@ slug: flask-3-routing
 description: Маршрутизация и как её можно использовать
 published_at: 2024-01-12
 course: Flask
+hidden: true
 ---
 ## Что такое Маршрутизация?
 
